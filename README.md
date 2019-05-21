@@ -4,7 +4,9 @@ Retique, or REal-TIme QUEstion System, is an open source multi-purpose questioni
 Try it now: [https://retique.allenchou.cc](https://retique.allenchou.cc)  
 
 ## Usage
-
+1. Create Room  
+2. Share the link with other participants
+3. Enjoy Retique!
 
 ## Installation
 ### Production
