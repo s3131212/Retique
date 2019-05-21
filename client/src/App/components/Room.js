@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Moment from 'react-moment';
+import * as moment from 'moment'
+import 'moment-timezone';
 import { checkLogin, logoutRoom } from '../../fetchapi.js';
 import SweetAlert from 'sweetalert-react';
 import swal from 'sweetalert';
@@ -149,7 +151,7 @@ class QuestionList extends Component {
                             </div>
                             <div className="header author">{(q.author) ? q.author : "Annonymous"}</div>
                             <div className="meta">
-                                <div><Moment local format="YYYY/MM/DD hh:mm:ss A" fromNowDuring="86400000">{q.timestamp}</Moment></div>
+                                <div><Moment local format="YYYY/MM/DD hh:mm:ss A" fromNowDuring="86400000" utc tz={moment.tz.guess()}>{q.timestamp}</Moment></div>
                             </div>
                             <div className="description">
                                 <p>{q.content}</p>
@@ -181,7 +183,7 @@ class ReplyList extends Component {
                         <div className="content">
                             <span className="author">{(r.author) ? r.author : "Annonymous"}</span>
                             <div className="metadata">
-                                <div><Moment local format="YYYY/MM/DD hh:mm:ss A" fromNowDuring="86400000">{r.timestamp}</Moment></div>
+                                <div><Moment local format="YYYY/MM/DD hh:mm:ss A" fromNowDuring="86400000" utc tz={moment.tz.guess()}>{r.timestamp}</Moment></div>
                             </div>
                             <div className="text">
                                 {r.content}
