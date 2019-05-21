@@ -1,0 +1,20 @@
+body {
+    background-color: rgb(250, 250, 250);
+}
+.superlarge {
+    font-size: 4.65rem !important;
+}
+.bitlarge {
+    font-size: 1.65rem !important;
+}
+.sweet-alert h2 {
+    display: block !important;
+}
+.verticallyCenteredContainer{
+    position: relative;
+}
+.verticallyCentered {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
