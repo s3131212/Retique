@@ -8,11 +8,21 @@ Try it now: [https://retique.allenchou.cc](https://retique.allenchou.cc)
 2. Share the link with other participants
 3. Enjoy Retique!
 
+## Screenshots
+### Home
+![Home](https://i.imgur.com/sycMIJY.png)
+
+### Room
+![Room](/client/public/screenshot.png)
+
+### Create Room
+![Create Room](https://i.imgur.com/zziLHZt.png)
+
 ## Installation
 ### Production
 First clone the repo:  
 ```
-git clone https://github.com/s3131212/midterm_retique.git
+git clone https://github.com/s3131212/retique.git
 cd midterm_retique
 ```
 
@@ -56,25 +66,5 @@ npm start
 
 Now use `localhost:3000` (or the port React dev server used) to access Retique.  
 
-## Packages Used
-Frontend:
-* React
-* Moment & React-Moment
-* SweetAlert & SweetAlert-React
-* Socket.io
-* Tocas UI
-
-Backend:
-* Express
-* Express-session
-* Express-CORS
-* node-mysql
-* Socket.io
-* node-uuid
-
-## My contribution
-All code except the packages mentioned above.
-
-## Reflection
-這段用中文寫好了 XD  
-會寫這個主要是因為之前活動和課堂用 slido 有一些不愉快的經驗，所以才想說趁這個機會自己寫個仿 slido 但更符合我所要使用的場景的提問系統。剛把架構想完時覺得應該不難，但實際寫下來也花了不少時間，踩了蠻多坑，像是處理時區或是資料同步等等的，總之各種被自己的 code 和爛架構雷到的事情。總之至少現在算是順利寫到能用了，也真的學了蠻多。
+## LICENSE
+MIT
