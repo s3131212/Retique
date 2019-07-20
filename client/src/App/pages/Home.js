@@ -117,7 +117,7 @@ class Home extends Component {
                             <div className="verticallyCentered center aligned">
                             <h2 className="ts icon header">
                                 <i className="idea icon"></i>Try it now!
-                                <div className="sub header">It's completely free and <a href="https://github.com/s3131212">open source</a>.</div>
+                                <div className="sub header">It's completely free and <a href="https://github.com/s3131212/retique">open source</a>.</div>
                             </h2>
                             <div className="ts hidden divider"></div>
                             <button className="ts big inverted button" onClick={ ()=> this.props.history.push('/create') }>Create Room</button>
